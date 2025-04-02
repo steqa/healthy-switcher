@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+@media (min-width: 0) {
+    .cardContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 576px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1400px) {
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

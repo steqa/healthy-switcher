@@ -1,0 +1,55 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.chef {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.chef .avatar {
+    width: 3.5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.chef .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.chef .text .name {
+    font-size: 1.125rem;
+}
+
+.chef .text .position {
+    font-size: 0.75rem;
+    color: var(--gray-400-color);
+}
+
+.dishes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.dishes .dish {
+    width: 100%;
+    height: 65px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dishes .dishSquare {
+    height: 65px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}

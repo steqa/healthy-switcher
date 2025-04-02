@@ -1,6 +1,7 @@
 import {S3_BUCKET, S3_URL} from "./constants.ts";
 import {SDishImage} from "./schemas/SDishImage.ts";
 import {SDish} from "./schemas/SDish.ts";
+import {SChef} from "./schemas/SChef.ts";
 
 export const getDishesImages = (): SDishImage[] => {
 	return [
@@ -27,4 +28,33 @@ export const getDishes = (): SDish[] => {
 		})
 	}
 	return dishes
+}
+
+export const getChefs = (): SChef[] => {
+	const chefs: SChef[] = []
+	chefs.push({
+		"avatar": S3_URL + S3_BUCKET + "/chef-1.jpg",
+		"name": "Gregory Flores",
+		"position": "Chef of the cold",
+		"dish1": S3_URL + S3_BUCKET + "/chef-1-dish-1.jpg",
+		"dish2": S3_URL + S3_BUCKET + "/chef-1-dish-2.jpg",
+		"dish3": S3_URL + S3_BUCKET + "/chef-1-dish-3.jpg"
+	})
+	chefs.push({
+		"avatar": S3_URL + S3_BUCKET + "/chef-2.jpg",
+		"name": "Annette Cooper",
+		"position": "Chef of the hot",
+		"dish1": S3_URL + S3_BUCKET + "/chef-2-dish-1.jpg",
+		"dish2": S3_URL + S3_BUCKET + "/chef-2-dish-2.jpg",
+		"dish3": S3_URL + S3_BUCKET + "/chef-2-dish-3.jpg"
+	})
+	chefs.push({
+		"avatar": S3_URL + S3_BUCKET + "/chef-3.jpg",
+		"name": "Greg Fox",
+		"position": "Chef macro kitchen",
+		"dish1": S3_URL + S3_BUCKET + "/chef-3-dish-1.jpg",
+		"dish2": S3_URL + S3_BUCKET + "/chef-3-dish-2.jpg",
+		"dish3": S3_URL + S3_BUCKET + "/chef-3-dish-3.jpg"
+	})
+	return chefs
 }

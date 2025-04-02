@@ -4,6 +4,7 @@ import {Main} from "../../blocks/Main/Main.tsx";
 import {About} from "../../blocks/About/About.tsx";
 import {Work} from "../../blocks/Work/Work.tsx";
 import {Dishes} from "../../blocks/Dishes/Dishes.tsx";
+import {Chefs} from "../../blocks/Chefs/Chefs.tsx";
 
 export const PMain = () => {
 	return (
@@ -17,6 +18,7 @@ export const PMain = () => {
 				<About/>
 				<Work/>
 				<Dishes/>
+				<Chefs/>
 			</div>
 		</>
 	)
