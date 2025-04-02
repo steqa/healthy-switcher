@@ -1,0 +1,19 @@
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    user-select: none;
+}
+
+.main {
+    padding: 80px var(--container-padding);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 80px var(--container-padding);
+    gap: 90px;
+}

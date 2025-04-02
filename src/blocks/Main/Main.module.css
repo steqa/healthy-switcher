@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.textContainer {
+    text-align: center;
+}
+
+.textContainer .title {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.3em;
+}
+
+.textContainer .subtitle {
+    color: color-mix(in srgb, var(--white-color) 80%, transparent);
+    line-height: 1.6em;
+}

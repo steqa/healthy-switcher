@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.star rect {
+    fill: var(--yellow-color);
+    transition: fill var(--transition-duration);
+}
+
+.dimmed rect {
+    fill: var(--gray-300-color);
+    transition: fill var(--transition-duration);
+}

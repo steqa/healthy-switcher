@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-UltraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-UltraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Roman.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-BoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Heavy.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-HeavyItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-Black.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/fonts/HelveticaNeueCyr-BlackItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+:root {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+    /*font-size: .85vw;*/
+    font-weight: 400;
+
+    color: var(--white-color);
+    background-color: var(--black-color);
+
+    --primary-color: #34C759;
+    --yellow-color: #F9AD3D;
+    --white-color: #e0e0e0;
+    --black-color: #1A1A1A;
+    --gray-100-color: #252525;
+    --gray-200-color: #303030;
+    --gray-300-color: #4D4D4D;
+    --gray-400-color: rgba(255, 255, 255, 0.5);
+    --gray-500-color: #b0b0b0;
+
+    --transition-duration: 0.25s;
+
+    --border-radius: 6px;
+
+    --break-point-small: 576px;
+    --break-point-medium: 768px;
+    --break-point-large: 992px;
+    --break-point-x-large: 1200px;
+    --break-point-xx-large: 1400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: 0.5rem;
+}
+
+p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 1.3rem;
+}
+
+@media (min-width: 0) {
+    :root {
+        --container-padding: 4%;
+    }
+}
+
+@media (min-width: 576px) {
+    :root {
+        --container-padding: 10%;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --container-padding: 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --container-padding: 15%;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --container-padding: 15%;
+    }
+}
+
+@media (min-width: 1400px) {
+    :root {
+        --container-padding: 18%;
+    }
+}
